@@ -5,93 +5,7 @@
   <head>
     <style>
     :root{
-      /* Put variables here*/
-    }
-     *{
-       margin:0;
-       padding:0;
-       box-size:border-box
-       
-     }
-      body{
-        background:lightgray;
-      }
-      header{
-        padding:2rem;
-        text-align:center;
-      }
-      nav{
-        background:black;
-        color:white;
-      }
-      footer{
-        background:black;
-        color:white;
-        padding:3rem;
-        min-height:10vh;
-      }
-      .container{
-        background:burlywood;
-        padding:1rem;
-        min-height:60vh;
-        width:80%;
-        margin:auto;
-      }
-      .section-header{
-        padding:1.25rem;
-        font-size:1.75rem;
-        border-bottom:1px lightgray;
-      }
-      .section-container{
-        display:flex;
-        flex-direction:row;
-        flex-wrap:wrap;
-        justify-content:flex-start;
-        align-items:stretch;
-        padding:1.25rem;
-      }
-      .section-item{
-        flex: 0 0 30%;
-        border:1px lightgreen;
-        border-radius:12px;
-        text-align:center;
-        background:white;
-        box-shadow:10px 5px 5px 0px rgba(0,0,0,0.25);
-      }
-    .section-item:hover{
-      border:3px yellow solid;
-      box-shadow:16px 8px 8px 0px rgba(0,0,0,0 .25);
-      background:lightyellow;
-    }
-    .section-item a {
-      color:black;
-      text-decoration:none;
-    }
-    .section-icon{
-      padding:1rem;
-    }
-    .section-icon i{
-      font-size:20vh;
-    }
-    .section-item h4{
-      background-color:lightgray;
-      padding:1rem;
-      font-size:1.15rem;
-      line-height:2rem;
-    }
-      @media only screen and (max-width:800px){
-      .container{
-        width:100%;
-        margin:auto;
-      }
-      .section-container{
-        flex-direction:column;
-        justify-content:center;
-      }
-      .section-item{
-        flex-basis:92%;
-      }
-     
+   
       
       
       
@@ -99,23 +13,89 @@
       
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/cardealer.css">
   <title>Car Dealer Home</title>
   </head>
   <body>
     
     
  <header>
-   Header
+   Call us anytime:<a href="tel:+3133387536">(313)-338-7536</a>
  </header>
   
   <nav>
-    Nav Section
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Cars.html">Home</a></li>
+      <li><a href="HotDeals.html">Home</a></li>
+      <li><a href="Team.html">Home</a></li>
+      <li><a href="Contact.html">Home</a></li>
+    </ul>
   </nav>
-  <div class="container">
-    <!-- Put assignment specific code here -->
+  <div class="cover-photo">
+    <div class='overlay'>
+      <div class="overlay-inner">
+        <h1>Car Dealership Name</h1>
+        <p>Create a tag line</p>
+        <a class="cta-button" href="cars.html"></a>
+        
+      </div>
+      
+      
+    </div><!-- End overlay-->
     
-  </div>
-  
+    </div><!--End cover photo-->
+    
+    <div class="row">
+      <div class="media">
+        <img src="images/carplaceholder.png" alt="#">
+      </div>
+      <div class="text">
+        <h2>Hot Deals Waiting For you !</h2>
+        <p>
+          Create a cool paragraph
+        </p>
+        <a class="cta-button" href="deals.html">View our hot deals</a>
+        
+      </div>
+      
+      
+    </div><!--end of a row-->
+    
+     <div class="row row-dark">
+      <div class="media">
+        <img src="images/carplaceholder.png" alt="#">
+      </div>
+      <div class="text">
+        <h2>We have the best team in town</h2>
+        <p>
+          Create a cool paragraph
+        </p>
+        <a class="cta-button" href="Team.html.html">View our hot deals</a>
+        
+      </div>
+      
+      
+    </div><!--end of a row-->
+    
+    
+     <div class="row">
+      <div class="media">
+        <img src="images/carplaceholder.png" alt="#">
+      </div>
+      <div class="text">
+        <h2>Three locations to serve you  !</h2>
+        <p>
+          Create a cool paragraph
+        </p>
+        <a class="cta-button" href="Contact.html">Call us for more infomation.</a>
+        
+      </div>
+      
+      
+    </div><!--end of a row-->
+    
+    
   <footer>
     Footer
   </footer>
