@@ -1,0 +1,196 @@
+   /* Put variables here*/
+   @keyframes grow{
+     from{width:0;height:0;}
+     to{width:100%;height:80vh;}
+   }
+   :Root{
+     /*Put Variables here*/
+   }
+    }
+     *{
+       margin:0;
+       padding:0;
+       box-size:border-box
+       
+     }
+      body{
+        background:lightgray;
+      }
+      header{
+        padding:2rem;
+        text-align:right;
+        font-size:1.5rem;
+      }
+      nav{
+        background:black;
+        color:white;
+      }
+      nav ul{
+        list-style-type:none;
+      }
+      nav li{
+        display:inline;
+      }
+      nav li a{
+        display:inline-block;
+        color:white;
+        padding:2.5vh 3vw;
+        font-size:1.25rem;
+        text-decoration:none;
+        transition:padding .5s ease;
+      }
+      nav li a:hover{
+        background-color:lemonchiffond;
+        color:black;
+        padding:2.5vh 4vw;
+      }
+      footer{
+        background:black;
+        color:white;
+        padding:3rem;
+        min-height:10vh;
+      }
+      .container{
+        background:burlywood;
+        padding:1rem;
+        min-height:60vh;
+        width:80%;
+        margin:auto;
+      }
+      .section-header{
+        padding:1.25rem;
+        font-size:1.75rem;
+        border-bottom:1px lightgray;
+      }
+      .section-container{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content:flex-start;
+        align-items:stretch;
+        padding:1.25rem;
+      }
+      .section-item{
+        flex: 0 0 30%;
+        border:1px lightgreen;
+        border-radius:12px;
+        text-align:center;
+        background:white;
+        box-shadow:10px 5px 5px 0px rgba(0,0,0,0.25);
+      }
+    .section-item:hover{
+      border:3px yellow solid;
+      box-shadow:16px 8px 8px 0px rgba(0,0,0,0 .25);
+      background:lightyellow;
+    }
+    .section-item a {
+      color:black;
+      text-decoration:none;
+    }
+    .section-icon{
+      padding:1rem;
+    }
+    .section-icon i{
+      font-size:20vh;
+    }
+    .section-item h4{
+      background-color:lightgray;
+      padding:1rem;
+      font-size:1.15rem;
+      line-height:2rem;
+    }
+    .cover-photo{
+      height:80vh;
+      margin:auto;
+      background:lightgrey;
+      /*Image is 3200x1800*/
+      background-image:url('../images/coverphoto1.png');
+      background-position:center;
+      background-size:cover;
+      animation-name:grow;
+      animation-duration:1.5s;
+    }
+    .overlay{
+      background-color:black;
+      width:100%;
+      height:100%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+    .overlay-inner{
+      color:white;
+      text-align:center;
+    }
+    .overlay-inner h1{
+      font-size:3rem;
+      padding:1rem;
+    }
+    .overlay-inner p {
+      font-size:1.75rem;
+      line-height:2.5rem;
+    }
+    .cta-button{
+      display:block;
+      max-width:350px;
+      margin:2vh auto;
+      padding:1.5rem;
+      border-radius:1rem;
+      color:white;
+      background:darkred;
+      font-size:1.5rem;
+      text-align:center;
+      text-decoration:none
+      transition:background-color .5ease;
+
+    }
+    .cta-button:hover{
+      background-color:red;
+    }
+    row{
+      width:100%;
+      display:flex;
+      flex-wrap:nowrap;
+      flex-direction:row;
+      min-height:30vh;
+      margin:2vh 0;
+    }
+    .row-dark{
+      background-color:lightgrey;
+    }
+    .row .media{
+      flex-basis:40%;
+    }
+    .row .text{
+      flex-basis:60%;
+    }
+    .media img{
+      display:block;
+      width:92%;
+      margin:auto;
+    }
+    .text h2{
+      padding:2vh;
+      
+    }
+    .text p{
+      font-size:1.25rem;
+      line-height:1.75rem;
+      padding:2vh;
+    }
+      @media only screen and (max-width:800px){
+      .container{
+        width:100%;
+        margin:auto;
+      }
+      .section-container{
+        flex-direction:column;
+        justify-content:center;
+      }
+      .section-item{
+        flex-basis:92%;
+      }
+     .container{
+       width:100%;
+       margin:auto;
+     }
